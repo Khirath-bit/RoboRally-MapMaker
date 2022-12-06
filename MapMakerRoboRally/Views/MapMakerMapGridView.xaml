@@ -1,0 +1,17 @@
+<UserControl x:Class="MapMakerRoboRally.Views.MapMakerMapGridView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MapMakerRoboRally.Views"
+             AllowDrop="True"
+             Drop="MapMakerMapGridView_OnDrop"
+             DragOver="MapMakerMapGridView_OnDragOver"
+             DragEnter="MapMakerMapGridView_OnDragEnter"
+             DragLeave="MapMakerMapGridView_OnDragLeave"
+             Background="#333333"
+             mc:Ignorable="d" >
+    <Grid Name="MainGrid">
+
+    </Grid>
+</UserControl>

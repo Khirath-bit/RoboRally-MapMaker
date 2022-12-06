@@ -1,0 +1,20 @@
+<UserControl x:Class="MapMakerRoboRally.Views.MapTileEntry"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MapMakerRoboRally.Views"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+             MouseMove="MapTileEntry_OnMouseMove"
+             GiveFeedback="MapTileEntry_OnGiveFeedback"
+             mc:Ignorable="d" >
+    <Grid>
+        <DockPanel  Height="48" LastChildFill="True">
+            <Image Margin="0 0 15 0" Width="45" Height="45" x:Name="ImagePart">
+            </Image>
+            <TextBlock x:Name="TextPart"
+                       VerticalAlignment="Center"
+                       FontSize="12"/>
+        </DockPanel>
+    </Grid>
+</UserControl>

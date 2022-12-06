@@ -1,0 +1,32 @@
+<Application x:Class="MapMakerRoboRally.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MapMakerRoboRally"
+             xmlns:views="clr-namespace:MapMakerRoboRally.Views"
+             xmlns:View="clr-namespace:MapMakerRoboRally.ViewModel"
+             StartupUri="/Views/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <BooleanToVisibilityConverter x:Key="BoolToVis" />
+            <DataTemplate DataType="{x:Type View:MainWindowViewModel}">
+                <views:MainWindow />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type View:MapMakerMainViewViewModel}">
+                <views:MapMakerMainView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type View:MapMakerNavigationViewModel}">
+                <views:MapMakerNavigation />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type View:MapMakerMapGridViewViewModel}">
+                <views:MapMakerMapGridView />
+            </DataTemplate>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive! -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <!-- Theme setting -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/dark.steel.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
